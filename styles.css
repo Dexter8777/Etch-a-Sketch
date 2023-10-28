@@ -5,17 +5,18 @@ body {
 .grid-container {
     display: flex;
     flex-wrap: wrap; 
-    width: 600px;
-    height: 600px;
+    width: 624px;
+    height: 624px;
     margin: auto;
     border: none;
-    border: 2px solid black;
+    outline: 2px solid black;
     
 }
 
 .grid-cell {
-    border: 1px solid black;
-    width: 35.5px;
-    height: 35.5px;
+    border: none;
+    outline: 1px solid black;
+    width: 39px;
+    height: 39px;
     margin: 0px;
 }
