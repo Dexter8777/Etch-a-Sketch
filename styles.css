@@ -4,11 +4,17 @@ body {
 
 .grid-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: none;
+    
 }
 
 .grid-cell {
-    border: 2px solid black;
-    width: 60px;
-    height: 60px;
+    border: 1px solid black;
+    width: 35.3px;
+    height: 35.3px;
+    
 }
