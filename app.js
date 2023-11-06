@@ -19,10 +19,13 @@ function addHoverEffect(){
         cell.classList.add('change-color');
        })
     })
-       
+       return cells
 
     }
-         
+
+function createButton() {
+    
+}
 
 
     
@@ -30,4 +33,4 @@ function addHoverEffect(){
 
 
 createGrid();
-addHoverEffect();
+createButton();
