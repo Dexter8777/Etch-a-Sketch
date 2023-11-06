@@ -12,19 +12,22 @@ let gridCell;
 }
 
 function addHoverEffect(){
-    cells = document.querySelectorAll('.grid-cell');
+   let cells = document.querySelectorAll('.grid-cell');
+
+    cells.forEach((cell) => {
+       cell.addEventListener('mouseover', () => {
+        cell.classList.add('change-color');
+       })
+    })
+       
+
+    }
+         
+
 
     
-    for(i = 0; i < cells.length; i++) {
-        cells[i].classList.add('change-color');
-
-        // cells[i].addEventListener('mouseover', () => {
-            
-        // })
-    }
-    console.log(cells);
-}
+    
 
 
-createGrid()
+createGrid();
 addHoverEffect();
