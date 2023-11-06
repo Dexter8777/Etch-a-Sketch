@@ -24,7 +24,9 @@ function addHoverEffect(){
     }
 
 function createButton() {
-    
+    let gridSquares = addHoverEffect();
+    console.log(gridSquares);
+
 }
 
 
