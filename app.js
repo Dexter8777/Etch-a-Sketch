@@ -35,15 +35,12 @@ function createButton() {
                 btnContainer.append(newBtn);
             }
         })
+
+function createUsrGrid(){
+    
+}
     
     
-    
-    // gridSquares.forEach((square) => {
-    //     if (square.classList.contains('change-color')) {
-    //         console.log('yes');
-    //     }
-        
-    // })
 
 }
 
