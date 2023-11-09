@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector('.grid-container');
+const btnContainer = document.querySelector('.btn-container');
 
 function createGrid() {
 let gridCell;
@@ -26,13 +27,12 @@ function createButton() {
     let gridSquares = document.querySelectorAll('.grid-cell');
 
     const newBtn = document.createElement('button');
-    console.log(newBtn);
 
         gridContainer.addEventListener('mouseover', () =>{
             for (i = 0; i < 1; i++){
                 newBtn.classList.add('new');
                 newBtn.textContent = 'New';
-                document.body.append(newBtn);
+                btnContainer.append(newBtn);
             }
         })
     
@@ -45,7 +45,6 @@ function createButton() {
         
     // })
 
-     console.log(gridSquares);
 }
 
 
