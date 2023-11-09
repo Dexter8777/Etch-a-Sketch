@@ -1,5 +1,6 @@
 const gridContainer = document.querySelector('.grid-container');
 const btnContainer = document.querySelector('.btn-container');
+const newBtn = document.createElement('button');
 
 function createGrid() {
 let gridCell;
@@ -24,9 +25,6 @@ function addHoverEffect(){
     }
 
 function createButton() {
-    let gridSquares = document.querySelectorAll('.grid-cell');
-
-    const newBtn = document.createElement('button');
 
         gridContainer.addEventListener('mouseover', () =>{
             for (i = 0; i < 1; i++){
@@ -35,10 +33,9 @@ function createButton() {
                 btnContainer.append(newBtn);
             }
         })
+    }
 
-function createUsrGrid(){
-    
-}
+function createUsrGrid() {
     
     
 
@@ -52,3 +49,4 @@ function createUsrGrid(){
 createGrid();
 addHoverEffect();
 createButton();
+createUsrGrid();
