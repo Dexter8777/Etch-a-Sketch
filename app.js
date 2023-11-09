@@ -36,7 +36,12 @@ function createButton() {
     }
 
 function createUsrGrid() {
-    
+
+
+    newBtn.addEventListener('click', () => {
+        let usrGrid = prompt('Enter your new grid');
+        console.log(usrGrid);
+    })
     
 
 }
