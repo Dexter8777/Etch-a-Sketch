@@ -47,7 +47,10 @@ function createUsrGrid() {
 
         gridContainer.replaceChildren();
         let usrGrid = prompt('Enter your new grid');
-        console.log(usrGrid);
+        usrGrid = Number(usrGrid);
+
+        
+        console.log(typeof(usrGrid));
     
 
 }
