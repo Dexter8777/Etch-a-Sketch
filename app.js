@@ -39,7 +39,7 @@ function createButton() {
 
 function createUsrGrid() {
 
-
+        gridContainer.replaceChildren();
         let usrGrid = prompt('Enter your new grid');
         console.log(usrGrid);
     
