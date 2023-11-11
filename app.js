@@ -8,6 +8,12 @@ function createGrid(gridNum) {
 
     let gridCell;
 
+    if (gridNum === undefined) {
+        gridNum = 16;
+    }
+
+    console.log(gridNum);
+
     for (let i = 0; i < 16; i++) {
         for (let j = 0; j < 16; j++) {
             gridCell = document.createElement('div');
