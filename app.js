@@ -12,10 +12,8 @@ function createGrid(gridNum) {
         gridNum = 16;
     }
 
-    console.log(gridNum);
-
-    for (let i = 0; i < 16; i++) {
-        for (let j = 0; j < 16; j++) {
+    for (let i = 0; i < gridNum; i++) {
+        for (let j = 0; j < gridNum; j++) {
             gridCell = document.createElement('div');
             gridCell.classList.add('grid-cell');
             gridContainer.appendChild(gridCell);
