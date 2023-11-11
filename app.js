@@ -2,6 +2,8 @@ const gridContainer = document.querySelector('.grid-container');
 const btnContainer = document.querySelector('.btn-container');
 const newBtn = document.createElement('button');
 
+newBtn.addEventListener('click', createUsrGrid)
+
 function createGrid() {
 let gridCell;
     for (let i = 0; i < 16; i++) {
@@ -38,10 +40,8 @@ function createButton() {
 function createUsrGrid() {
 
 
-    newBtn.addEventListener('click', () => {
         let usrGrid = prompt('Enter your new grid');
         console.log(usrGrid);
-    })
     
 
 }
@@ -54,4 +54,3 @@ function createUsrGrid() {
 createGrid();
 addHoverEffect();
 createButton();
-createUsrGrid();
