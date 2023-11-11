@@ -49,6 +49,8 @@ function createUsrGrid() {
         let usrGrid = prompt('Enter your new grid');
         usrGrid = Number(usrGrid);
 
+        createGrid(usrGrid);
+        addHoverEffect();
         
         console.log(typeof(usrGrid));
     
