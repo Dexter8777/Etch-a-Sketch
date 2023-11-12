@@ -20,7 +20,8 @@ function createGrid(gridNum) {
         for (let j = 0; j < gridNum; j++) {
             gridCell = document.createElement('div');
             gridCell.classList.add('grid-cell');
-           
+            gridCell.style.width = width;
+            gridCell.style.height = height;
             gridContainer.appendChild(gridCell);
         } 
     } 
