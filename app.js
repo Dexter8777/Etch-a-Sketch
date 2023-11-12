@@ -10,15 +10,23 @@ function createGrid(gridNum) {
 
     if (gridNum === undefined) {
         gridNum = 16;
-    }
+    } 
+
+    let width = 624/gridNum + 'px';
+    let height = 624/gridNum + 'px';
+    
 
     for (let i = 0; i < gridNum; i++) {
         for (let j = 0; j < gridNum; j++) {
             gridCell = document.createElement('div');
             gridCell.classList.add('grid-cell');
+           
             gridContainer.appendChild(gridCell);
         } 
     } 
+
+   
+    
 }
 
 function addHoverEffect(){
@@ -51,15 +59,8 @@ function createUsrGrid() {
 
         createGrid(usrGrid);
         addHoverEffect();
-        
-        console.log(typeof(usrGrid));
-    
 
 }
-
-
-    
-    
 
 
 createGrid();
