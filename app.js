@@ -49,8 +49,8 @@ function createButton() {
 function createUsrGrid() {
 
         gridContainer.replaceChildren();
-        let usrGrid = prompt('Enter your new grid');
-        if (usrGrid > 100 ) usrGrid = prompt('please Enter a smaller than one hundred')
+        let usrGrid = prompt('Enter the number of rows and columns for your new grid');
+        if (usrGrid > 100 ) usrGrid = prompt('please Enter a number smaller than one hundred')
 
         usrGrid = Number(usrGrid);
 
