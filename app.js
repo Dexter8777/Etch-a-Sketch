@@ -21,8 +21,6 @@ function createGrid(gridNum) {
             gridContainer.appendChild(gridCell);
         } 
     } 
-
-   
     
 }
 
@@ -52,6 +50,8 @@ function createUsrGrid() {
 
         gridContainer.replaceChildren();
         let usrGrid = prompt('Enter your new grid');
+        if (usrGrid > 100 ) usrGrid = prompt('please Enter a smaller than one hundred')
+
         usrGrid = Number(usrGrid);
 
         createGrid(usrGrid);
