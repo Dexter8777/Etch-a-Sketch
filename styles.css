@@ -27,8 +27,6 @@ h1 {
 .grid-cell {
     border: none;
     outline: 1px solid black;
-    width: 39px;
-    height: 39px;
     margin: 0px;
 }
 
